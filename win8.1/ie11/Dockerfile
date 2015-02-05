@@ -15,6 +15,4 @@ RUN ./fetch.sh $(./ie-urls.sh | grep -i win8 | grep -e '8\.1' | grep -i ie11)
 RUN wget -c --recursive --no-directories --accept-regex 'virtio.*\.iso' \
         http://alt.fedoraproject.org/pub/alt/virtio-win/stable/
 
-VOLUME /data
-
-CMD ./start.sh
+CMD ./start.sh disk.qcow2
