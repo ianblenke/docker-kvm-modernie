@@ -1,7 +1,8 @@
 FROM ianblenke/kvm
+MAINTAINER Ian Blenke <ian@blenke.com>
 
 RUN apt-get -y update
-RUN DEBIAN_FRONTEND=noninteractive apt-get -y install curl git wget libguestfs-tools aria2 unzip dos2unix unrar-free wget git
+RUN DEBIAN_FRONTEND=noninteractive apt-get -y install curl git wget libguestfs-tools aria2 unzip dos2unix unrar-free wget git alien samba xorriso
 
 WORKDIR /data
 
