@@ -8,7 +8,7 @@ This repo triggers a number of autobuild images on Docker Hub under [ianblenke/k
 
 One way you might right run these would be:
 
-    docker run --rm --privileged --name=win10-ie11 --net=host -p 5900:5900 -p 3389:3389 -ti ianblenke/kvm-modernie:win10_ie11
+    docker run --rm --privileged --name=win10-ie11 -p 5900:5900 -p 3389:3389 -ti ianblenke/kvm-modernie:win10_ie11
 
 There are definitely opportunities for improvement here.
 
